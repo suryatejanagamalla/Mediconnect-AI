@@ -1,49 +1,48 @@
 # Medical_Assistant
 
-Healthcare Access Enhancement Project
-This repository contains the implementation of a project aimed at easing healthcare access and reducing the workload on doctors and patients by leveraging advanced AI and machine learning techniques. The project is built on the integration of audio-to-text conversion, text summarization, a Retrieval-Augmented Generation (RAG) model, and a user-friendly app platform for streamlined healthcare interactions.
+# Healthcare AI Assistant
 
-Project Overview
-Objective
-To simplify healthcare access and assist medical practitioners by:
+This repository contains a project designed to streamline healthcare access and reduce the workload on doctors and patients by utilizing advanced AI techniques. The solution is built to process medical call recordings between practitioners and patients, extract meaningful insights, and provide intelligent healthcare support through a user-friendly application.
 
-Extracting meaningful insights from medical call recordings between practitioners and patients.
-Providing a symptom-checker chatbot for quick diagnosis and recommendations.
-Features
-Patient Insights
-Summarizes audio recordings into concise insights, highlighting key patient information.
-Symptom Checker
-A medical chatbot that provides possible diagnoses and remedies based on real-time data and symptom inputs.
-Project Workflow
-1. Data Collection
-Simulated 272 medical call recordings between practitioners and patients, focusing on:
-Respiratory diseases
-Musculoskeletal diseases
-Cardiac diseases
-Dermatological diseases
-Gastrointestinal diseases
-2. Architecture
-Audio-to-Text Conversion
-Leveraged advanced transcription tools to convert medical call recordings into textual data.
-Text Summarization and Key Attribute Extraction
-Extracted critical medical attributes (symptoms, diagnoses, medications) from text data.
-RAG Model Integration
-Built a Retrieval-Augmented Generation (RAG) model:
-Integrated Large Language Models (LLMs) with vector databases for efficient information retrieval.
-App Development
-Created a Streamlit-based application to deliver insights and chatbot functionalities.
-Technical Stack
-Technologies and Tools
-Programming Language: Python
-Frameworks:
-Streamlit (for the app platform)
-Pydub (for audio processing)
-Libraries:
-OpenAI (for LLM integration)
-LangChain (for RAG model development)
-Sentence Transformers (for embedding generation)
-Database: Pinecone (vector database)
-Other Tools:
-Whisper (audio-to-text conversion)
-Key Files
-requirements.txt: Lists all dependencies for the project.
+## Overview
+
+The project focuses on handling audio data to create a comprehensive healthcare assistant. It incorporates AI-driven methods to process call recordings related to respiratory, musculoskeletal, cardiac, dermatological, and gastrointestinal diseases. The resulting application serves two primary purposes:
+
+1. **Patient Insights**: Summarizes patient-practitioner conversations into actionable insights.
+2. **Symptom Checker**: A chatbot that suggests possible diseases and remedies based on real-time data.
+
+---
+
+## Architecture
+
+The solution is implemented in the following steps:
+
+1. **Audio-to-Text Conversion**  
+   - Converts audio call recordings into textual transcripts for further analysis.
+   
+2. **Text Summarization and Key Attribute Extraction**  
+   - Summarizes the transcribed conversations.
+   - Extracts key attributes (symptoms, diagnoses, prescriptions, etc.) for processing.
+
+3. **RAG Model Implementation**  
+   - Built a **Retrieval-Augmented Generation (RAG)** model by integrating Large Language Models (LLMs) with vector databases for efficient data retrieval and response generation.
+
+4. **Application Development**  
+   - Developed a user-friendly interface using **Streamlit**, providing the following features:
+     - **Patient Insights**: Displays summarized views of audio recordings for quick review by practitioners and patients.
+     - **Symptom Checker**: An interactive chatbot that suggests possible diseases and remedies based on user input and real-time data.
+
+---
+
+## Features
+
+- **Audio-to-Text Conversion**: Seamlessly converts medical calls into structured textual data.  
+- **Summarization and Insights**: Provides concise summaries of patient data for efficient decision-making.  
+- **Symptom Checker**: Suggests probable diseases and remedies using intelligent algorithms and real-time information.  
+- **Streamlit Integration**: Offers an easy-to-use app platform for both practitioners and patients.  
+
+---
+
+## Requirements
+
+The project includes a `requirements.txt` file that lists all necessary dependencies. 
